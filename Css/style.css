@@ -122,6 +122,10 @@ body {
   @media screen and (min-width: 1130px) {
     .footer__last {
       display: none; } }
+  @media only screen and (max-width: 1130px) {
+    .footer__last {
+      justify-content: center;
+      align-items: center; } }
   .footer__link {
     color: black; }
   .footer__last {
@@ -137,6 +141,9 @@ body {
       margin-top: 1rem;
       display: flex;
       justify-content: space-between; } }
+  @media screen and (max-width: 500px) {
+    .footer__icons {
+      width: 90%; } }
   @media screen and (max-width: 1000px) {
     .footer__icons--img {
       width: 60px;

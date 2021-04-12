@@ -151,6 +151,10 @@ body {
     @media screen and (min-width: 1130px) {
       display: none;
     }
+    @media only screen and (max-width: 1130px) {
+      justify-content: center;
+      align-items: center;
+    }
   }
   &__link {
     color: black;
@@ -171,6 +175,9 @@ body {
       margin-top: 1rem;
       display: flex;
       justify-content: space-between;
+    }
+    @media screen and (max-width: 500px) {
+      width: 90%;
     }
   }
   &__icons--img {
