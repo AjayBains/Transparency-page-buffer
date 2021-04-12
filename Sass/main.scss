@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.navigation {
+  &__brand {
+    width: 10%;
+  }
+  &__listWrapper {
+    text-align: right;
+  }
+  &__list {
+    margin-left: 15rem;
+    @media screen and(max-width:1180px) {
+      margin-left: 6rem;
+    }
+  }
+}
+
+.table {
+  background-color: gray;
+  min-height: 550px;
+  &__heading {
+    // background-color: gray;
+    color: white;
+    padding: 1.2rem 4rem;
+  }
+  &__main {
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    padding: 1.2rem 0;
+    background-color: white;
+    overflow: scroll;
+  }
+}
+
+/**salary calculation box*/
+.salaryCalc {
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__heading {
+  }
+  &__pic {
+  }
+  &__img {
+    width: 100%;
+  }
+  &__cards {
+    display: flex;
+
+    @media screen and (max-width: 1050px) {
+      flex-direction: column;
+    }
+  }
+  &__card {
+    // background: cyan;
+    line-height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin: 0.3rem 0.7rem;
+    &--heading {
+      font-weight: 700;
+    }
+  }
+}
+
+// Footer section
+.footer {
+  margin-top: 4rem;
+  background-color: lightgrey;
+  height: 90vh;
+  @media screen and (max-width: 1000px) {
+    height: auto;
+  }
+  &__container {
+    height: 100%;
+  }
+  &__wrapper {
+    display: flex;
+    min-height: 60%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+    @media screen and (max-width: 1000px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__column {
+    text-align: center;
+    @media screen and (max-width: 1000px) {
+      width: 100%;
+    }
+  }
+  &__list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  &__end {
+    display: flex;
+    width: 20%;
+    margin-top: 1.3rem;
+
+    flex-direction: column;
+    justify-content: space-between;
+    @media screen and (max-width: 1000px) {
+      width: 100%;
+    }
+  }
+  &__first {
+    @media only screen and (max-width: 1130px) {
+      display: none;
+    }
+  }
+  &__last {
+    @media screen and (min-width: 1130px) {
+      display: none;
+    }
+  }
+  &__link {
+    color: black;
+  }
+  &__last {
+    margin-top: 2rem;
+  }
+  &__icon {
+    @media screen and (max-width: 1000px) {
+      width: 20%;
+      margin: auto;
+    }
+  }
+  &__icons {
+    @media screen and (max-width: 1000px) {
+      width: 50%;
+      margin: auto;
+      margin-top: 1rem;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__icons--img {
+    @media screen and (max-width: 1000px) {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+// tables styles
+table {
+  border-collapse: collapse;
+  border-radius: 5px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+th {
+  background: #009578;
+  color: #ffffff;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 10px 20px;
+}
+
+tr:nth-child(even) {
+  background: #eeeeee;
+}

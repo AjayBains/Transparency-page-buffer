@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./Css/style.css">
+    <style>
+        /* table {
+  border-collapse: collapse;
+  border-radius: 5px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+th {
+  background: #009578;
+  color: #ffffff;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 10px 20px;
+}
+
+tr:nth-child(even) {
+  background: #eeeeee;
+} */
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+    <nav class="transparent navigation">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="" class="brand-logo black-text navigation__brand"><img src="./images/buffer.svg" alt=""></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger hide-on-large-only right"><i
+              class="material-icons black-text">menu</i>W</a>
+        
+          <div class="hide-on-med-and-down navigation__listWrapper">
+        
+            <ul class="navigation__list">
+              <li><a href="" class="black-text">Tools </a></li>
+              <li><a href="" class="black-text">Pricing</a></li>
+              <li><a href="" class="black-text">Resources</a></li>
+              <li><a href="" class="black-text">About</a></li>
+              <li><a href="" class="black-text">Customers</a></li>
+            </ul>
+            <div class="cta">
+              <button class="btn blue white-text">Get Started </button>
+              <button class="btn transparent black-text">Log in </button>
+            </div>
+          </div>
+        
+        
+        </div>
+      </div>
+      
+
+    </nav>
+    <div class="sidenav" id="mobile-demo">
+      <ul>
+        <li><a href="" >Tools </a></li>
+        <li><a href="">Pricing</a></li>
+        <li><a href="">Resources</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Customers</a></li>
+      </ul>
+      <div class="cta">
+        <button class="btn blue white-text">Get Started </button>
+        <button class="btn transparent black-text">Log in </button>
+      </div>
+    
+    </div>
+    <section class="title">
+      <div class="container">
+        <h2 class ="center">Transparency at its core</h2>
+        <p>Loving the Buffer policy of being transparent,i would try to explain my idea of doing this page.The kind of job i'll be doing section asked me to look at salaries page, and i figured out that on salaries page data was getting parsed into tabular form. I'd have loved to parse a json file and parse it into a tabular content using react as i have started getting myself familiar with react </p>
+
+        <p>But not having a json file at disposal , i used a JS library <a href="https://www.papaparse.com/">papa parse</a> to parse a csv file representing data of Combined Land-Surface Air and Sea-Surface Water Temperature Anomalies (Land-Ocean Temperature Index, L-OTI) giving zonal annual means from 1880-2020.csv file obtained from <a href="https://data.giss.nasa.gov/gistemp/">here</a></p>
+        
+        <p>Yes i could have written a json file myself but i was bored of working on fake self made json files after practsing few youtube react tutorials which used seld made json files so decided to use a csv file,  and ended up learning new things in the process of tryin to implement</p>
+        
+
+      </div>
+    </section>
+    <section class="table">
+      <h4 class="table__heading">Zonal Annual mean Land Ocean Temperatur Index</h4>
+      
+      <div class="table__main">
+        
+        <table id="csvRoot"></table></div>
+
+          
+      
+      
+    </section>
+    <section class="salaryCalc">
+      <div class="container">
+        <div class="salaryCalc__box">
+          <h2 class="salaryCalc__heading">Salary Formula</h2>
+          <div class="salaryCalc__pic">
+            <img src="./images/buffer-salary-formula.svg" alt="salary formula" class="salaryCalc__img">
+          </div>
+          <div class="salaryCalc__cards">
+            <div class="salaryCalc__card">
+              <div class="salaryCalc__icon">
+                <img src="./images/salary-formula-1.svg" alt="icon1" class="salaryCalc__icon--pic">
+                
+              </div>
+              <h6 class="salaryCalc__card--heading">WE benchmark for position and expereince level</h6>
+              <p class="salaryCalc__card--text">The role benchmark is based on the software industry and the 50th percentile of San
+                francisco market data.</p>
+            </div>
+            <div class="salaryCalc__card">
+              <div class="salaryCalc__icon">
+                <img src="./images/salary-formula-2.svg" alt="icon1" class="salaryCalc__icon--pic">
+                
+              </div>
+              <h6 class="salaryCalc__card--heading">Apply cost of living based on your location</h6>
+              <p class="salaryCalc__card--text">These take into account being a global team,while closing the gap  found in traditional compensation system</p>
+            </div>
+            <div class="salaryCalc__card">
+              <div class="salaryCalc__icon">
+                <img src="./images/salary-formula-3.svg" alt="icon1" class="salaryCalc__icon--pic">
+                
+              </div>
+              <h6 class="salaryCalc__card--heading">Determine a formula based salary</h6>
+              <p class="salaryCalc__card--text">We calculate salarires taking into account being a global team and closing the gap found in traditional pay practices</p>
+            </div>
+            
+          </div>
+
+        </div>
+        
+
+      </div>
+      
+
+    </section>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__wrapper">
+          <div class="column1 footer__end footer__first">
+            <div class="footer__icon">
+              <img src="./images/footerTitle.svg" alt="" class="footer__icon--img">
+              </div>
+              <div class="footer__icons">
+                <span class="footer__icon">
+                  <img src="./images/facebook_black_24dp.svg" alt="" class="footer__icon--img">
+                </span>
+                <span class="footer__icon">
+                  <img src="./images/facebook_black_24dp.svg" alt="" class="footer__icon--img">
+                </span>
+                <span class="footer__icon">
+                  <img src="./images/facebook_black_24dp.svg" alt="" class="footer__icon--img">
+                </span>
+                <span class="footer__icon">
+                  <img src="./images/facebook_black_24dp.svg" alt="" class="footer__icon--img">
+                </span>
+                <span class="footer__icon">
+                  <img src="./images/facebook_black_24dp.svg" alt="" class="footer__icon--img">
+                </span>
+            </div>
+          </div>
+
+          <div class="footer__column">
+            <h5 class="footer__heading">Tools</h5>
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#" class="footer__link">Tools</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Publishing</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Analytics</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Engagement</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Pricing and extras</a></li>
+            </ul>
+          
+          </div>
+
+            <div class="footer__column">
+              <h5 class="footer__heading">Company</h5>
+              <ul class="footer__list">
+                <li class="footer__item"><a href="#" class="footer__link">About Us</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Customers</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Community</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Request</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Non profits</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Carrers</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Buffer brand kit</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Press</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Accesibility</a></li>
+              </ul>
+
+            </div>
+            
+            <div class="footer__column">
+              <h5 class="footer__heading">Tools</h5>
+              <ul class="footer__list">
+                <li class="footer__item"><a href="#" class="footer__link">Tools</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Publishing</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Analytics</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Engagement</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Pricing and extras</a></li>
+              </ul>
+
+            </div>
+            <div class="footer__column">
+              <h5 class="footer__heading">Tools</h5>
+              <ul class="footer__list">
+                <li class="footer__item"><a href="#" class="footer__link">Tools</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Publishing</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Analytics</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Engagement</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Pricing and extras</a></li>
+              </ul>
+
+            </div>
+            <div class="footer__column">
+              <h5 class="footer__heading">Tools</h5>
+              <ul class="footer__list">
+                <li class="footer__item"><a href="#" class="footer__link">Tools</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Publishing</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Analytics</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Engagement</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Pricing and extras</a></li>
+              </ul>
+
+            </div>
+            <div class="footer__column footer__end footer__last">
+              <div class="footer__icon">
+                <img src="./images/footerTitle.svg" alt="" class ="footer__icon--img">
+              </div>
+              <div class="footer__icons">
+                <span class="footer__icon--pic">
+                  <img src="./images/facebook_black_24dp.svg" alt="" class="footer__icons--img">
+                </span>
+                <span class="footer__icon--pic">
+                  <img src="./images/facebook_black_24dp.svg" alt="" class="footer__icons--img">
+                </span>
+                <span class="footer__icon--pic">
+                  <img src="./images/facebook_black_24dp.svg" alt="" class="footer__icons--img">
+                </span>
+                <span class="footer__icon--pic">
+                  <img src="./images/facebook_black_24dp.svg" alt="" class="footer__icons--img">
+                </span>
+                <span class="footer__icon--pic">
+                  <img src="./images/facebook_black_24dp.svg" alt="" class="footer__icons--img">
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+    <!-- <input type="file" id="csvFileInput" style = 'padding-bottom:15px'> -->
+    <!-- <table id="csvRoot"></table> -->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./lib/papaparse.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+    <script>
+      $(document).ready(function () {
+          $('.sidenav').sidenav();
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Roboto", sans-serif; }
+
+.navigation__brand {
+  width: 10%; }
+
+.navigation__listWrapper {
+  text-align: right; }
+
+.navigation__list {
+  margin-left: 15rem; }
+  @media screen and (max-width: 1180px) {
+    .navigation__list {
+      margin-left: 6rem; } }
+
+.table {
+  background-color: gray;
+  min-height: 550px; }
+  .table__heading {
+    color: white;
+    padding: 1.2rem 4rem; }
+  .table__main {
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    padding: 1.2rem 0;
+    background-color: white;
+    overflow: scroll; }
+
+/**salary calculation box*/
+.salaryCalc__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.salaryCalc__img {
+  width: 100%; }
+
+.salaryCalc__cards {
+  display: flex; }
+  @media screen and (max-width: 1050px) {
+    .salaryCalc__cards {
+      flex-direction: column; } }
+
+.salaryCalc__card {
+  line-height: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 2rem;
+  margin: 0.3rem 0.7rem; }
+  .salaryCalc__card--heading {
+    font-weight: 700; }
+
+.footer {
+  margin-top: 4rem;
+  background-color: lightgrey;
+  height: 90vh; }
+  @media screen and (max-width: 1000px) {
+    .footer {
+      height: auto; } }
+  .footer__container {
+    height: 100%; }
+  .footer__wrapper {
+    display: flex;
+    min-height: 60%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1.5rem; }
+    @media screen and (max-width: 1000px) {
+      .footer__wrapper {
+        flex-direction: column;
+        align-items: center; } }
+  .footer__column {
+    text-align: center; }
+    @media screen and (max-width: 1000px) {
+      .footer__column {
+        width: 100%; } }
+  .footer__list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+  .footer__end {
+    display: flex;
+    width: 20%;
+    margin-top: 1.3rem;
+    flex-direction: column;
+    justify-content: space-between; }
+    @media screen and (max-width: 1000px) {
+      .footer__end {
+        width: 100%; } }
+  @media only screen and (max-width: 1130px) {
+    .footer__first {
+      display: none; } }
+  @media screen and (min-width: 1130px) {
+    .footer__last {
+      display: none; } }
+  .footer__link {
+    color: black; }
+  .footer__last {
+    margin-top: 2rem; }
+  @media screen and (max-width: 1000px) {
+    .footer__icon {
+      width: 20%;
+      margin: auto; } }
+  @media screen and (max-width: 1000px) {
+    .footer__icons {
+      width: 50%;
+      margin: auto;
+      margin-top: 1rem;
+      display: flex;
+      justify-content: space-between; } }
+  @media screen and (max-width: 1000px) {
+    .footer__icons--img {
+      width: 60px;
+      height: 60px; } }
+
+table {
+  border-collapse: collapse;
+  border-radius: 5px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 14px; }
+
+th {
+  background: #009578;
+  color: #ffffff;
+  text-align: left; }
+
+th,
+td {
+  padding: 10px 20px; }
+
+tr:nth-child(even) {
+  background: #eeeeee; }
