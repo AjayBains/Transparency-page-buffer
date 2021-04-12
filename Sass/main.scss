@@ -13,6 +13,24 @@ body {
 .navigation {
   &__brand {
     width: 10%;
+    @media screen and (max-width: 1000px) {
+      width: 80%;
+      text-align: center;
+    }
+    @media screen and (max-width: 500px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &__pic {
+    @media screen and (max-width: 1000px) {
+      width: 20%;
+    }
+    @media screen and (max-width: 500px) {
+      display: inline-block;
+      margin-top: 0.3rem;
+      width: 40%;
+    }
   }
   &__listWrapper {
     text-align: right;

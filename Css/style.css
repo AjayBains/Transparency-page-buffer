@@ -11,6 +11,24 @@ body {
 
 .navigation__brand {
   width: 10%; }
+  @media screen and (max-width: 1000px) {
+    .navigation__brand {
+      width: 80%;
+      text-align: center; } }
+  @media screen and (max-width: 500px) {
+    .navigation__brand {
+      width: 100%;
+      text-align: center; } }
+
+@media screen and (max-width: 1000px) {
+  .navigation__pic {
+    width: 20%; } }
+
+@media screen and (max-width: 500px) {
+  .navigation__pic {
+    display: inline-block;
+    margin-top: 0.3rem;
+    width: 40%; } }
 
 .navigation__listWrapper {
   text-align: right; }
